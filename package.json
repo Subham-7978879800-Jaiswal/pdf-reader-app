@@ -1,5 +1,5 @@
 {
-  "name": "pdf-reader-app",
+  "name": "Pdf reader app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,12 +9,34 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "13.5.6"
+    "@pinecone-database/pinecone": "1.1.1",
+    "autoprefixer": "^10.4.14",
+    "axios": "^1.4.0",
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "debug": "^4.3.4",
+    "dotenv": "^16.0.3",
+    "graphql": "^16.8.1",
+    "hnswlib-node": "^1.4.2",
+    "langchain": "0.0.165",
+    "next": "13.4.1",
+    "openai": "^3.2.1",
+    "pdf-parse": "^1.1.1",
+    "postcss": "^8.4.23",
+    "react": "18.2.0",
+    "react-burger-menu": "^3.0.9",
+    "react-dom": "18.2.0",
+    "serpapi": "^1.1.1",
+    "supports-color": "^9.3.1",
+    "tailwindcss": "^3.3.2",
+    "weaviate-ts-client": "^1.5.0",
+    "youtube-transcript": "^1.0.6"
   },
   "devDependencies": {
-    "eslint": "^8",
-    "eslint-config-next": "13.5.6"
+    "@types/cors": "^2.8.13",
+    "@types/node": "20.1.0",
+    "@types/react": "18.2.6",
+    "express-sse": "^0.5.3",
+    "typescript": "5.0.4"
   }
 }

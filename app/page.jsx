@@ -9,7 +9,7 @@ import "./globals.css";
 // This functional component is responsible for loading PDFs
 const PDFLoader = () => {
   // Managing prompt, messages, and error states with useState
-  const [prompt, setPrompt] = useState("How to get rich?");
+  const [prompt, setPrompt] = useState("Ask Anything");
   const [messages, setMessages] = useState([
     {
       text: "Hi, I'm a Naval AI. What would you like to know?",

@@ -10,7 +10,7 @@ export default async function handler(req, res) {
     console.log("Uploading book");
     // Enter your code here
     /** STEP ONE: LOAD DOCUMENT */
-    const bookPath = "2 Tax Rates.pdf";
+    const bookPath = "MV+User+Manual (1).pdf";
     const loader = new PDFLoader(bookPath);
 
     const docs = await loader.load();
@@ -22,8 +22,8 @@ export default async function handler(req, res) {
 
     const splitter = new CharacterTextSplitter({
       separator: " ",
-      chunkSize: 250,
-      chunkOverlap: 10,
+      chunkSize: 50,
+      chunkOverlap: 15,
     });
 
     const splitDocs = await splitter.splitDocuments(docs);

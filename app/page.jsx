@@ -97,17 +97,17 @@ const PDFLoader = () => {
   return (
     <>
       <Title emoji="💬" headingText="PDF-GPT" />
-      <ResultWithSources messages={messages} pngFile="pdf" />
+            <ResultWithSources messages={messages} pngFile="pdf" />
             <PromptBox
               prompt={prompt}
               handlePromptChange={handlePromptChange}
               handleSubmit={() => handleSubmitPrompt("/pdf-query")}
               // handleSubmit={() => handleSubmitQuery("/pdfquery-agent")}
-              placeHolderText={"How to get rich?"}
+              placeHolderText={"Ask Anything"}
               error={error}
-            />
-    </>
-  );
-};
+              />
+              </>
+            );
+          };
 
 export default PDFLoader;

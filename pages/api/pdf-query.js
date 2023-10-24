@@ -40,7 +40,7 @@ export default async function handler(req, res) {
 
     const model = new OpenAI();
     const chain = VectorDBQAChain.fromLLM(model, vectorStore, {
-      k: 1,
+      k: 3,
       returnSourceDocuments: true,
     });
     const response = await chain.call({ query: input });
